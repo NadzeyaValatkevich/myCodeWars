@@ -4,4 +4,15 @@ function position(letter) {
     const place = (array.indexOf(letter) + 1);
     return `Position of alphabet: ${place}`
 };
-console.log(position('z'))
+console.log(position('z'));
+
+//task2 N-th Power
+function index(array, n){
+    if(!array[n]){
+     return -1
+    } else {
+     return (array[n] ** n)
+    }
+ };
+ 
+console.log(index([1, 2, 3, 4],2))
