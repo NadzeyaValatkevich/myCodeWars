@@ -28,4 +28,24 @@ if(n >= divisor) {
 }
 };
 
-console.log(divisions(100, 2))
+console.log(divisions(100, 2));
+
+//task3 Credit Card Mask
+function maskify(cc) {
+  let arr = cc.split('');
+
+if(cc.length === 1) {
+   return cc;
+} else {
+  for(let i = 0; i < (arr.length - 4); i++) {
+   arr[i] = '#'; 
+  };   
+}
+
+let newStr = arr.join('');
+
+  return newStr;
+  
+};
+
+console.log(maskify('4556364607935616'))
